@@ -1,14 +1,14 @@
-/*var HelloWorld = function() {};
 
-HelloWorld.prototype.say = function(success, fail) {
-    cordova.exec(success, fail, "HelloWorldPlugin","say", []);
-};
+  function Flutterwave () {
+    console.log("Initializing Cordova FLW plugin ")
+      const inlineSdk = "https://checkout.flutterwave.com/v3.js";
+      const script = document.createElement("script");
+      script.src = inlineSdk;
+      if (!document.querySelector(`[src="${inlineSdk}"]`)) {
+          document.body.appendChild(script);
+      }
 
-var helloWorld = new HelloWorld();
-module.exports = helloWorld;*/
-
-
-var Flutterwave = function () {};
+  }
 
 Flutterwave.prototype.makePayment = function (paymentData) {
     window.FlutterwaveCheckout(paymentData);
@@ -48,10 +48,7 @@ Flutterwave.prototype.closePaymentModal = function (waitDuration = 0) {
 };
 
 
-
-
-var flutterwave = new Flutterwave()
-module.exports = flutterwave
+module.exports = Flutterwave
 
 /*Flutterwave.install = function () {
     const inlineSdk = "https://checkout.flutterwave.com/v3.js";
