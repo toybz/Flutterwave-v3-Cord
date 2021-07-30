@@ -1,4 +1,36 @@
 {
-  "name" : "HelloWorldPlugin", 
-  "version" : "0.0.1"
+  "name": "flutterwave-v3-cordova-sdk",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Flutterwave official Cordova library to accept payment via card , USSD, QrCode, Mobile Money etc in your hybrid apps builds.",
+  "author": "Flutterwave",
+  "main": "src/setup.js",
+  "directories": {
+    "lib": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "build": "babel src/index.js --out-file dist/flutterwave.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flutterwave/Flutterwave-v3-Cordova-SDK.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flutterwave/Flutterwave-v3-Cordova-SDK/issues"
+  },
+  "homepage": "https://github.com/Flutterwave/Flutterwave-v3-Cordova-SDK#readme",
+  "keywords": [
+    "Flutterwave",
+    "Cordova",
+    "Phonegap",
+    "Ionic",
+    "Fluterwave"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/cli": "^7.0.0-beta.44"
+  }
 }
